@@ -63,6 +63,7 @@
   align-self: flex-start;
   margin-bottom: 7px;
   padding: 0 12px;
+  overflow-wrap: break-word;
 }
 
 .to-message {
@@ -75,6 +76,7 @@
   margin-bottom: 7px;
   align-self: flex-end;
   padding: 0 12px;
+  overflow-wrap: break-word;
 }
 
 #input-text {
@@ -92,4 +94,5 @@
   background-color: black;
   padding: 0 12px;
   height: 28px;
+  color: white;
 }
