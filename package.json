@@ -1,0 +1,19 @@
+{
+  "name": "chat-ui",
+  "version": "1.0.0",
+  "description": "Front end chat UI written in vanilla js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RTBlanco/chat-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RTBlanco/chat-ui/issues"
+  },
+  "homepage": "https://github.com/RTBlanco/chat-ui#readme"
+}
