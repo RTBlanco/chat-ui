@@ -38,28 +38,29 @@ function createToMessage(text) {
 
 function createFromMessge(text) {
   // TODO: Try to see if you could use regex to better match the string
-  
+
   const messageArea = document.getElementById('messages');
   let response
   switch (text) {
     case "hey":
-      response = "Hey how are you!"
+      response = "Hey how are you! 🙋🏽‍♂️"
       break;
     
     case "what are you":
-      response = "I am a simple Bot in this simple world"
+      response = "I am a simple Bot in this simple world 🤖"
       break;
 
     case "you are so cool":
-      response = "I know!!! Thanks to Ronny! someone should really hire this man"
+      response = "Thank You 🔥!!! I wouldn't be here if it wasnt for Ronny! someone should really hire this man"
       break;
 
     case "doing good":
-      response = "Well you probably doing better then Ronny he's going crazy looking for a job"
+      response = "Well you probably doing better then Ronny, he's going crazy looking for a job 👀"
       break;
 
     case "bye":
-      response = "By Remeber to follow ronny on Twitter @R_T_Blanco!!"
+      response = "By Remeber to follow ronny on Twitter @R_T_Blanco!!🤣"
+      break;
 
     default:
       response = "Im sorry Im not a smart bot.... yet can you repeat that please?"
