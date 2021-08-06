@@ -16,15 +16,6 @@ document.addEventListener("DOMContentLoaded", () =>{
   
 })
 
-// function createToMessage(text) {
-//   const messageArea = document.getElementById('messages');
-//   let content = `
-//     <div class="to-message">
-//       ${text}
-//     </div>
-//   `
-//   messageArea.innerHTML += content
-// }
 
 function createToMessage(text) {
   const messageArea = document.getElementById('messages');
@@ -72,6 +63,7 @@ function createFromMessge(text) {
       response = "Im sorry Im not a smart bot.... yet can you repeat that please?"
       break;
   }
+  
   if (messageArea.children.length === 0){
     let content = `
       <div class="from-message">
