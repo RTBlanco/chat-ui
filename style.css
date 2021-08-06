@@ -6,6 +6,7 @@
 :root {
   --from-color: rgb(102, 101, 101);
   --to-color: rgb(36, 138, 255);
+  --header-color: rgba(128, 128, 128, 0.973);
 }
 
 .container {
@@ -22,14 +23,17 @@
 }
 
 #header {
-  border: 1px solid rgba(128, 128, 128, 0.384);
-  background-color: rgba(128, 128, 128, 0.384);
+  border: 1px solid var(--header-color);
+  background-color: var(--header-color);
   height: 90px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
+  /* position: fixed;
+  top: 0; */
+  z-index: 1;
 }
 
 #contact-img{
@@ -51,6 +55,7 @@
   border: 1px solid black;
   padding: 0 5px;
   justify-content: flex-end;
+  overflow-y: auto;
 }
 
 .from-message {

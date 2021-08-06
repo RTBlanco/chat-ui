@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () =>{
 function createToMessage(text) {
   const messageArea = document.getElementById('messages');
   let content = `
-    <div class="to-message">
+    <ul class="to-message">
       ${text}
-    </div>
+    </ul>
   `
   messageArea.innerHTML += content
 }
@@ -54,9 +54,9 @@ function createFromMessge(text) {
       break;
   }
   let content = `
-    <div class="from-message">
+    <ul class="from-message">
       ${response}
-    </div>
+    </ul>
   `
   messageArea.innerHTML += content
 }
