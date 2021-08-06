@@ -57,7 +57,7 @@ function createFromMessge(text) {
       response = "I am a simple Bot in this simple world"
       break;
 
-    case "your are so cool":
+    case "you are so cool":
       response = "I know!!! Thanks to Ronny! someone should really hire this man"
       break;
 
