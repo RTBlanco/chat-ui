@@ -12,6 +12,7 @@
 .container {
   display: flex;
   justify-content: center;
+  /* height: 100vh; */
 }
 
 #chat {
@@ -50,11 +51,11 @@
 #messages {
   height: 95%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   background-color: black;
   border: 1px solid black;
   padding: 0 5px;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   overflow-y: auto;
 }
 
@@ -100,4 +101,30 @@
   padding: 0 12px;
   height: 28px;
   color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    height: 100vh;
+  }
+
+  #chat {
+    width: 100%;
+    height: 100%;
+  }
+
+  .from-message {
+    max-width: calc(375px / 1.5);
+  }
+  
+  .to-message {
+    max-width: calc(375px / 1.5);
+  }
+  
+  /* #input-text input {
+    
+    width: calc(352px / 0.5);;
+  } */
+
+  
 }

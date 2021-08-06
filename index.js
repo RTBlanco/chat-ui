@@ -16,14 +16,33 @@ document.addEventListener("DOMContentLoaded", () =>{
   
 })
 
+// function createToMessage(text) {
+//   const messageArea = document.getElementById('messages');
+//   let content = `
+//     <div class="to-message">
+//       ${text}
+//     </div>
+//   `
+//   messageArea.innerHTML += content
+// }
+
 function createToMessage(text) {
   const messageArea = document.getElementById('messages');
-  let content = `
-    <ul class="to-message">
-      ${text}
-    </ul>
-  `
-  messageArea.innerHTML += content
+  if (messageArea.children.length === 0){
+    let content = `
+      <div class="to-message">
+        ${text}
+      </div>
+    `
+    messageArea.innerHTML += content
+  } else {
+    let msg = document.createElement('div')
+    msg.className = "to-message"
+    msg.innerText = text
+
+    let prevMsg = messageArea.firstChild
+    messageArea.insertBefore(msg, prevMsg)
+  }
 }
 
 function createFromMessge(text) {
@@ -38,7 +57,7 @@ function createFromMessge(text) {
       response = "I am a simple Bot in this simple world"
       break;
 
-    case "your are so cool":
+    case "you are so cool":
       response = "I know!!! Thanks to Ronny! someone should really hire this man"
       break;
 
@@ -53,10 +72,19 @@ function createFromMessge(text) {
       response = "Im sorry Im not a smart bot.... yet can you repeat that please?"
       break;
   }
-  let content = `
-    <ul class="from-message">
-      ${response}
-    </ul>
-  `
-  messageArea.innerHTML += content
+  if (messageArea.children.length === 0){
+    let content = `
+      <div class="from-message">
+        ${response}
+      </div>
+    `
+    messageArea.innerHTML += content
+  } else {
+    let msg = document.createElement('div')
+    msg.className = "from-message"
+    msg.innerText = response
+
+    let prevMsg = messageArea.firstChild
+    messageArea.insertBefore(msg, prevMsg)
+  }
 }
