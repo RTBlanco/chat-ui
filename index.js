@@ -37,6 +37,8 @@ function createToMessage(text) {
 }
 
 function createFromMessge(text) {
+  // TODO: Try to see if you could use regex to better match the string
+  
   const messageArea = document.getElementById('messages');
   let response
   switch (text) {
@@ -63,7 +65,7 @@ function createFromMessge(text) {
       response = "Im sorry Im not a smart bot.... yet can you repeat that please?"
       break;
   }
-  
+
   if (messageArea.children.length === 0){
     let content = `
       <div class="from-message">
