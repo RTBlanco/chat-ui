@@ -1,5 +1,5 @@
 # chat-ui
-Front end chat UI written in vanilla js 
+Front end chat UI written in vanilla js [view](https://rtblanco.github.io/chat-ui/)
 
 <img src="https://media.giphy.com/media/84ZweAnbRRA7nQfMzt/giphy.gif">
 
