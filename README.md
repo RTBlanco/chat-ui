@@ -1,5 +1,6 @@
 # chat-ui
-Front end chat UI written in vanilla js 
+Front end chat UI written in vanilla js.
+
 You can test it here!! [Chat it up](https://rtblanco.github.io/chat-ui/)
 
 <img src="https://media.giphy.com/media/84ZweAnbRRA7nQfMzt/giphy.gif">
