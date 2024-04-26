@@ -59,7 +59,7 @@ function createFromMessge(text) {
       break;
 
     case "bye":
-      response = "Bye,👋🏽 Remeber to follow ronny on Twitter @R_T_Blanco!!🤣"
+      response = "Bye,👋🏽 Remeber to add Ronny on Linkedin !!🤣"
       break;
 
     default:
